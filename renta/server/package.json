@@ -1,0 +1,22 @@
+{
+  "name": "rentafacil-server",
+  "version": "1.0.0",
+  "description": "API REST backend para RentaFácil con Node.js, Express y SQLite",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.4",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.0",
+    "rentafacil": "file:.."
+  }
+}

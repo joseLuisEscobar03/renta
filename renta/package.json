@@ -1,0 +1,15 @@
+{
+  "name": "rentafacil",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema completo de gestión y cobranza de alquileres inmobiliarios con WhatsApp y SQLite",
+  "scripts": {
+    "dev": "concurrently -n \"API,WEB\" -c \"cyan,emerald\" \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/src/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
